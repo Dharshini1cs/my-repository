@@ -1,0 +1,80 @@
+.outer-about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.outer-about-container > .about-header-container{
+    font-size: 26px;
+    font-weight: bolder;
+    margin: 1%;
+    border-bottom: 3px solid silver;
+    color: var(--secondary-color);
+}
+
+.head-text-container{
+    font-size:large;
+    margin: 1.5%;
+    width: max-content;
+    font-weight: bold;
+    border-bottom: 3px solid silver;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.list-text-container{
+    font-size:large;
+    margin: 1.5%;
+    width: max-content;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-content{
+    text-align: justify;
+    margin: 2% 3%;
+    padding: 1%;
+    line-height: 1.5;
+    border: 1px solid silver;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+.about-content > .about-history-list{
+    color: var(--grey);
+    margin: 0 0 0 2%;
+    line-height: 2;
+}
+.head-text{
+    margin: 0 0 0 10px;
+}
+.read-more, .read-less {
+    font-weight: bold;
+    color: blue;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+.about-content .book {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:500px){
+    
+    .outer-about-container > .about-header-container{
+        font-size: 20px;
+    }
+}
+
+.btn-download {
+    background-color: #0d2646 !important; /* Set the background color */
+    color:white !important;
+}
+
+.btn-download:hover {
+    background-color: #0c4986 !important; /* Optional: Add a slightly darker color for hover effect */
+    color:white !important;
+    
+}

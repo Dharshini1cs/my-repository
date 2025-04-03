@@ -1,0 +1,95 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--body-color);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.home-about-desc{
+  text-indent: 20px;
+}
+.home-about-desc span{
+  font-size: 1.7rem;
+  /* color: #525fe1; */
+  color: gray;
+  font-weight: bold;
+
+}
+.centre-card img{
+  transition: 0.2s linear;
+}
+
+.centre-card:hover img{
+  transform: scale(1.1);
+}
+
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  background-color: var(--body-color);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.home-gall-car {
+  height: 500px;
+}
+
+.melpakkam {
+  font-style: italic !important;
+}
+
+.home-gall-car div,
+img {
+  height: 100%;
+}
+
+.home-gall-car img {
+  object-fit: cover;
+}
+
+@media only screen and (max-width:800px) {
+  .home-gall-car {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .home-gall-car {
+    height: 250px;
+  }
+  .home-about-desc span{
+    font-size: 1.5rem;
+    padding-right: 1px;
+    color: black;
+  }
+}
+
+.placement-card-sec{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.placement-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.placement-card img{
+  border-radius: 50% !important;
+  width: 12rem;
+  height: auto;
+  margin-top: 10px;
+  padding: 5px;
+  border: 2px solid blueviolet;
+}
